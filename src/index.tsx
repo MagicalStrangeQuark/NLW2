@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
+import Landing from './pages/Landing';
 import * as serviceWorker from './serviceWorker';
+
+import './assets/styles/global.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <Landing />
   </React.StrictMode>,
   document.getElementById('root')
 );
