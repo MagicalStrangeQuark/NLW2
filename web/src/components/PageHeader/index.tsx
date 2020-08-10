@@ -7,7 +7,8 @@ import backIcon from './../../assets/images/icons/back.svg';
 import './styles.css';
 
 interface PagerHeaderProps {
-    title: string
+    title: string,
+    description?: string
 };
 
 const PageHeader: React.FunctionComponent<PagerHeaderProps> = (props) => {
@@ -21,9 +22,11 @@ const PageHeader: React.FunctionComponent<PagerHeaderProps> = (props) => {
 
         <div className="header-content">
             <strong>{props.title}</strong>
+
+            {props.description && <p>{props.description}</p>}
+
             {props.children}
         </div>
-
 
     </header>);
 }
