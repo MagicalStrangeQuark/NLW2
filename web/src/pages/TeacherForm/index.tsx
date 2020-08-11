@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import PageHeader from '../../components/PageHeader';
 
@@ -11,6 +11,21 @@ import warningIcon from './../../assets/images/icons/warning.svg';
 import './styles.css';
 
 function TeacherForm() {
+    const [ScheduleItems, setScheduleItems] = useState([
+        { week_day: 0, from: '', to: '' }
+    ]);
+
+    function addNewScheduleItem() {
+        setScheduleItems([
+            ...ScheduleItems,
+            {
+                week_day: 0,
+                from: '',
+                to: ''
+            }
+        ]);
+    }
+
     return (
         <div id="pager-teacher-form" className="container">
             <PageHeader title="Que incrível que você quer dar aulas."
@@ -35,16 +50,22 @@ function TeacherForm() {
                 <fieldset>
                     <legend>
                         Horários disponíveis
-                        <button type="button">
+                        <button type="button" onClick={() => { addNewScheduleItem() }}>
                             + Novo horário
                         </button>
                     </legend>
 
-                    <div className="schedule-item">
-                        <Select name="week_day" label="Dia da semana" options={WeekDay} />
-                        <Input name="from" label="Das" type="time" />
-                        <Input name="to" label="Até" type="time" />
-                    </div>
+                    {
+                        ScheduleItems.map(scheduleItem => {
+                            return (
+                                <div key={scheduleItem.week_day} className="schedule-item">
+                                    <Select name="week_day" label="Dia da semana" options={WeekDay} />
+                                    <Input name="from" label="Das" type="time" />
+                                    <Input name="to" label="Até" type="time" />
+                                </div>
+                            );
+                        })
+                    }
                 </fieldset>
 
                 <footer>
