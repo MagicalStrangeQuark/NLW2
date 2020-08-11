@@ -25,7 +25,9 @@
     Proffy
 </h2>
 
-<img style="display: block; object-fit: cover; border-radius: 1px; width: 100%; pointer-events: auto;" src="https://media.giphy.com/media/cPfjwUZtwArxyHVqjz/giphy.gif">
+<p align="center">
+    <img src="https://media.giphy.com/media/cPfjwUZtwArxyHVqjz/giphy.gif">
+</p>
 
 ## 👺 Starting a new project
 
@@ -83,7 +85,9 @@
 
 `npm start`
 
-# Visual Studio Code extensions
+<h2 align="center">
+    Visual Studio Code extensions
+</h2>
 
 <p align="center">
     <a href="https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite">
