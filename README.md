@@ -91,6 +91,6 @@
 
 <p align="center">
     <a href="https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite">
-        <img src="SQLite370.svg.png" style="width: 15vw"></img>
+        <img src="SQLite370.svg.png" style="max-width: 15vw"></img>
     </a>
 </p>
