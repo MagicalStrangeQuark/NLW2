@@ -65,6 +65,7 @@ npm install @types/express --save-dev
 npm install ts-node-dev --save-dev
 npm install cors
 npm install @types/cors
+npm install axios --save
 ```
 
 # Create typescript's file tsconfig.json
