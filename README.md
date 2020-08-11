@@ -31,59 +31,75 @@
 
 ## 👺 Starting a new project
 
-`npx create-react-app web --template typescript`
+```
+npx create-react-app web --template typescript
+```
 
 ## Installing the react-router-dom dependency
 
-`npm install --save react-router-dom`
+```
+npm install --save react-router-dom
 
-`npm install --save-dev @types/react-router-dom`
+npm install --save-dev @types/react-router-dom
+```
 
 ## Increase the limit for files being watched
 
-`sudo sysctl -w fs.inotify.max_user_watches=100000`
+```
+sudo sysctl -w fs.inotify.max_user_watches=100000
+```
 
 ## Installing the other project dependencies
 
-`mkdir server`
-`cd server`
+```
+mkdir server
+cd server
 
-`npm init -y`
+npm init -y
 
-`npm install typescript --save-dev`
-`npm install knex --save`
-`npm install sqlite3 --save`
-`npm install express`
-`npm install @types/express --save-dev`
-`npm install ts-node-dev --save-dev`
-`npm install cors`
-`npm install @types/cors`
+npm install typescript --save-dev
+npm install knex --save
+npm install sqlite3 --save
+npm install express
+npm install @types/express --save-dev
+npm install ts-node-dev --save-dev
+npm install cors
+npm install @types/cors
+```
 
 # Create typescript's file tsconfig.json
 
-`mkdir src`
+```
+mkdir src
 
-`touch src/server.ts`
+touch src/server.ts
 
-`npx tsc --init`
+npx tsc --init
+```
 
 ## Run migrations
 
-`cd server`
+```
+cd server
 
-`npm knex:migrate`
+npm knex:migrate
+```
 
 ## Start Web Application
 
-`cd web`
+```
+cd web
 
-`npm start`
+npm start
+```
 
 ## Star Server
 
-`cd server`
+```
+cd server
 
-`npm start`
+npm start
+```
 
 <h2 align="center">
     Visual Studio Code extensions
@@ -91,6 +107,6 @@
 
 <p align="center">
     <a href="https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite">
-        <img src="SQLite370.svg.png" style="max-width: 15vw"></img>
+        <img src="SQLite370.svg.png" style="max-width: 15%"></img>
     </a>
 </p>
