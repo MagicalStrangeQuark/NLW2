@@ -1,7 +1,10 @@
 import React from 'react';
+
 import PageHeader from '../../components/PageHeader';
 import TeacherItem from '../../components/TeacherItem';
 import Input from '../../components/Input';
+import { Materias, Select, WeekDay } from '../../components/Select';
+
 import './styles.css';
 
 function TeacherList() {
@@ -9,8 +12,8 @@ function TeacherList() {
         <div id="pager-teacher-list" className="container">
             <PageHeader title="Estes são os proffys disponíveis.">
                 <form id="search-teachers">
-                    <Input name="subject" label="Matéria" />
-                    <Input name="week_day" label="Dia da Semana" />
+                    <Select name="subject" label="Matéria" options={Materias} />
+                    <Select name="week_day" label="Dia da Semana" options={WeekDay} />
                     <Input type="time" name="time" label="Hora" />
                 </form>
             </PageHeader>
