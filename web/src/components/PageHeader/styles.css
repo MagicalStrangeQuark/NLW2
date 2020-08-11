@@ -40,7 +40,7 @@
     color: var(--color-title-in-primary);
 }
 
-.page-geader .header-content p {
+.pager-header .header-content p {
     max-width: 30rem;
     font-size: 1.6rem;
     line-height: 2.6rem;
