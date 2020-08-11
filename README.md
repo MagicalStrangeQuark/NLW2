@@ -31,13 +31,13 @@
 
 ## 👺 Starting a new project
 
-```
+```bash
 npx create-react-app web --template typescript
 ```
 
 ## Installing the react-router-dom dependency
 
-```
+```bash
 npm install --save react-router-dom
 
 npm install --save-dev @types/react-router-dom
@@ -45,13 +45,13 @@ npm install --save-dev @types/react-router-dom
 
 ## Increase the limit for files being watched
 
-```
+```bash
 sudo sysctl -w fs.inotify.max_user_watches=100000
 ```
 
 ## Installing the other project dependencies
 
-```
+```bash
 mkdir server
 cd server
 
@@ -70,7 +70,7 @@ npm install axios --save
 
 # Create typescript's file tsconfig.json
 
-```
+```bash
 mkdir src
 
 touch src/server.ts
@@ -80,7 +80,7 @@ npx tsc --init
 
 ## Run migrations
 
-```
+```bash
 cd server
 
 npm knex:migrate
@@ -88,7 +88,7 @@ npm knex:migrate
 
 ## Start Web Application
 
-```
+```bash
 cd web
 
 npm start
@@ -96,7 +96,7 @@ npm start
 
 ## Star Server
 
-```
+```bash
 cd server
 
 npm start
@@ -108,7 +108,7 @@ npm start
 
 2° Step: Create un application
 
-```
+```bash
 npm install expo-cli --global
 
 export --version
