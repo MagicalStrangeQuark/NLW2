@@ -107,7 +107,7 @@ npm start
 </h2>
 
 <p align="center">
-    <a href="https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite">
-        <img src="SQLite370.svg.png" style="max-width: 15%"></img>
+    <a href="https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite" >
+        <img src="SQLite370.svg.png" width="400"></img>
     </a>
 </p>
