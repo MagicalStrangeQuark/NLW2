@@ -36,7 +36,7 @@ const Select: React.FunctionComponent<SelectProps> = ({ label, name, options, ..
         <div className="select-block">
             <label htmlFor={name}> {label} </label>
 
-            <select id={name} {...rest} defaultValue={"disabled"}>
+            <select id={name} {...rest} value={"disabled"}>
                 <option value="disabled" hidden>Selecione uma opção</option>
 
                 {options.map((option) => {
