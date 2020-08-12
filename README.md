@@ -136,7 +136,9 @@ yarn start
 expo r -c
 ```
 
-## If the "fontFamily material-community is not a system font and has not been loaded through Font.loadAsync" problem occurs, run the command below
+### If the similar problem below occurs, run the command</h2>
+
+`fontFamily * is not a system font and has not been loaded through Font.loadAsync`
 
 ```bash
 watchman watch-del-all && rm -rf $TMPDIR/react-* && rm -rf node_modules/ && rm -f package-lock.json && rm -f yarn.lock && npm cache verify && npm install && expo r -c
