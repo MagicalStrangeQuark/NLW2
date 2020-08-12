@@ -1,23 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, { useState } from 'react';
 
+import * as Font from 'expo-font';
 import { AppLoading } from 'expo';
-
-import { Archivo_400Regular, Archivo_700Bold, useFonts } from '@expo-google-fonts/archivo';
-import { Poppins_400Regular, Poppins_600SemiBold } from '@expo-google-fonts/poppins';
 
 import AppStack from './src/routes/AppStack';
 
 export default function App() {
-  let [fontsLoaded] = useFonts({
-    Archivo_400Regular,
-    Archivo_700Bold,
-    Poppins_400Regular,
-    Poppins_600SemiBold
-  });
+  const [isReady, setReady] = useState(false);
 
-  if (!fontsLoaded) {
-    return <AppLoading />
+  if (!isReady) {
+    return (
+      <AppLoading
+        startAsync={_loadAssets}
+        onFinish={() => setReady(true)}
+        onError={e => console.error(e)}
+      />
+    );
   } else {
     return (
       <>
@@ -26,4 +25,13 @@ export default function App() {
       </>
     );
   }
+}
+
+const _loadAssets = async () => {
+  await Font.loadAsync({
+    'Archivo_400Regular': require('./node_modules/@expo-google-fonts/archivo/Archivo_400Regular.ttf'),
+    'Archivo_700Bold': require('./node_modules/@expo-google-fonts/archivo/Archivo_700Bold.ttf'),
+    'Poppins_400Regular': require('./node_modules/@expo-google-fonts/poppins/Poppins_400Regular.ttf'),
+    'Poppins_600SemiBold': require('./node_modules/@expo-google-fonts/poppins/Poppins_600SemiBold.ttf')
+  });
 }
