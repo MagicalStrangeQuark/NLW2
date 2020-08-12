@@ -1,29 +1,29 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+
+import { AppLoading } from 'expo';
+
+import { Archivo_400Regular, Archivo_700Bold, useFonts } from '@expo-google-fonts/archivo';
+import { Poppins_400Regular, Poppins_600SemiBold } from '@expo-google-fonts/poppins';
+
+import AppStack from './src/routes/AppStack';
 
 export default function App() {
-  const date = new Date().toString();
+  let [fontsLoaded] = useFonts({
+    Archivo_400Regular,
+    Archivo_700Bold,
+    Poppins_400Regular,
+    Poppins_600SemiBold
+  });
 
-  return (
-    <View style={styles.container}>
-      <Text>Proffy 👹</Text>
-      <Text style={styles.title}>This is My First APP</Text>
-      <Text>{date}</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    color: '#f00',
-    fontSize: 32
+  if (!fontsLoaded) {
+    return <AppLoading />
+  } else {
+    return (
+      <>
+        <AppStack />
+        <StatusBar style="light" />
+      </>
+    );
   }
-});
+}
