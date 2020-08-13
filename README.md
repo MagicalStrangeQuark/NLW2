@@ -123,6 +123,7 @@ npm install react-native-gesture-handler react-native-reanimated react-native-sc
 npm install @react-navigation/stack
 npm install @react-navigation/bottom-tabs
 npm install axios
+npm install @react-native-community/async-storage
 yarn start
 ```
 
