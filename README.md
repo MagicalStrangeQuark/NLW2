@@ -29,6 +29,24 @@
     <img src="https://media.giphy.com/media/cPfjwUZtwArxyHVqjz/giphy.gif">
 </p>
 
+<h2 align="center">
+    <a href="https://www.notion.so/Configurando-Ambiente-NLW-98a471ad3cb6448284b8ceed31c45767">
+        Configurando Ambiente NLW
+    </a>
+</h2>
+
+<h2 align="center">
+    <a href="https://www.notion.so/Layout-Proffy-3d5f45f54ec54ef9b2103565b7cce4e1">
+        Layout Proffy
+    </a>
+</h2>
+
+<h2 align="center">
+    <a href="https://www.notion.so/Vers-o-2-0-Proffy-eefca1b981694cd0a895613bc6235970">
+        Versão 2.0 Proffy
+    </a>
+</h2>
+
 ## 👺 Starting a new project
 
 ```bash
