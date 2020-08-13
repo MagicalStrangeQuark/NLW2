@@ -66,8 +66,6 @@ npm install ts-node-dev --save-dev
 npm install cors
 npm install @types/cors
 npm install axios --save
-npm install styled-components
-npm install @types/styled-components -D
 ```
 
 # Create typescript's file tsconfig.json
@@ -113,20 +111,18 @@ npm start
 ```bash
 npm install expo-cli --global
 
-export --version
+expo --version
 
-export init [ Choose a template: expo-template-blank-typescript ]
+expo init [ Choose a template: expo-template-blank-typescript ]
 
 npm install expo-font @expo-google-fonts/archivo @expo-google-fonts/poppins
-
+npm install styled-components
+npm install @types/styled-components -D
 npm install @react-navigation/native
-
 npm install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
-
 npm install @react-navigation/stack
-
 npm install @react-navigation/bottom-tabs
-
+npm install axios
 yarn start
 ```
 
