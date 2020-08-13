@@ -1,0 +1,20 @@
+{
+    "name": "Wesley Flôres",
+    "avatar": "https://avatars2.githubusercontent.com/u/49111142?s=460&u=1d9e3fb6724c7141793c67760847255de73cdb4a&v=4",
+    "whatsapp": "55 51 996201475",
+    "bio": "System Analysis and Development Student",
+    "subject": "Física",
+    "cost": "80",
+    "schedule": [
+        {
+            "week_day": "1",
+            "from": "13:00",
+            "to": "16:30"
+        },
+        {
+            "week_day": "6",
+            "from": "7:00",
+            "to": "9:30"
+        }
+    ]
+}
