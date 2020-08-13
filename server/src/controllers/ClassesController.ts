@@ -25,9 +25,6 @@ export default class ClassesController {
 
         const timeInMinutes = convertHourToMinutes(time);
 
-        // console.log(week_day);
-        // console.log(timeInMinutes);
-
         const classes = await db('classes')
             .whereExists(function () {
                 this.select('class_schedule.*')
@@ -40,8 +37,6 @@ export default class ClassesController {
             .where('classes.subject', '=', subject)
             .join('users', 'classes.user_id', '=', 'users.id')
             .select(['classes.*', 'users.*']);
-
-        // console.log(classes);
 
         return response.status(200).json(classes);
     }
@@ -70,8 +65,6 @@ export default class ClassesController {
 
             const class_id = insertedClassesIds[0];
 
-
-
             const classSchedule = schedule.map((scheduleItem: ScheduleItem) => {
                 return {
                     week_day: scheduleItem.week_day,
@@ -81,7 +74,6 @@ export default class ClassesController {
                 };
             });
 
-            
             await trx('class_schedule').insert(classSchedule);
 
             trx.commit();
